@@ -10,6 +10,6 @@ NKRO_ENABLE = no                 # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no            # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = yes            # Enable keyboard RGB underglow
 PROGRAMMABLE_BUTTON_ENABLE = yes # Programmable buttons
-RAW_HID = yes                    # Bidirectional
+RAW_ENABLE = yes                 # Bidirectional
 
 KEY_LOCK_ENABLE = yes
