@@ -87,13 +87,15 @@ bool is_same_colour(void) {
 
 void do_move(uint8_t x, uint8_t y) {
     // Randomly change the colour to something different
-    uint8_t new = rand() % 4;
+    uint8_t new;
 
-    if (new == tiles[x][y]) {
-        tiles[x][y] = (tiles[x][y] + 1) % 4;
-    } else {
-        tiles[x][y] = new;
+    while ( true ){
+        new = rand() % 4;
+        if(new != tiles[x][y]) {
+            break;
+        }
     }
+    tiles[x][y] = new;
 }
 
 void refresh_leds(void) {
